@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./Assets_spotify/logo.png" />
+    <title>Spotify Web Player: Music for everyone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <!-- SIDEBAR -->
+      <div class="sidebar">
+        <!-- home nd search -->
+        <div class="nav">
+          <div class="nav-option" style="opacity: 1">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Home</a>
+          </div>
+          <div class="nav-option">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#">Search</a>
+          </div>
+        </div>
+
+        <!-- library -->
+        <div class="library">
+          <!-- lib options -->
+          <div class="options">
+            <div class="lib-option">
+              <img src="./Assets_spotify/library_icon.png" />
+              <a href="#">Your Library</a>
+            </div>
+            <!-- + -> icons -->
+            <div class="icons">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <!-- Boxes within library -->
+          <div class="boxes">
+            <div class="box">
+              <div class="box-p1">Create your first playlist</div>
+              <div class="box-p2">It's easy, we'll help you</div>
+              <button class="badge">Create playlist</button>
+            </div>
+            <div class="box box-2">
+              <div class="box-p1 box2-p1">
+                Let's find some podcasts to follow
+              </div>
+              <div class="box-p2 box2-p2">
+                We'll keep you updated on new episodes
+              </div>
+              <button class="badge badge-2">Browse podcasts</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- main content -->
+      <div class="main_content">
+        <!-- freezing top bar while scrolling -->
+        <div class="sticky-nav">
+          <!-- "<" nd ">" -->
+          <div class="sticky-nav-icons">
+            <img src="./Assets_spotify/backward_icon.png" />
+            <img src="./Assets_spotify/forward_icon.png" class="hide" />
+          </div>
+
+          <div class="sticky-nav-options">
+            <button class="badge nav-item">Explore Premium</button>
+            <button class="badge nav-item dark-badge">
+              <i class="fa-regular fa-circle-down" style="margin-right: 5px"></i
+              >Install App
+            </button>
+            <i class="fa-regular fa-user nav-item"></i>
+          </div>
+        </div>
+
+        <!-- Cards -->
+
+        <h2>Recently Played</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="Assets_spotify/card1img.jpeg" class="card-img" />
+            <p class="card-title">Top 50-Global</p>
+            <p class="card-info">Your daily update of the most played...</p>
+          </div>
+        </div>
+
+        <h2>Trending now near you</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="Assets_spotify/card2img.jpeg" class="card-img" />
+            <p class="card-title">Mahiye Jinna Sohna</p>
+            <p class="card-info">Darshan Raval • Lyrics...</p>
+          </div>
+          <div class="card">
+            <img src="Assets_spotify/card3img.jpeg" class="card-img" />
+            <p class="card-title">Mere Paas Tum Ho</p>
+            <p class="card-info">Rahat Fateh Ali Khan • Lyrics...</p>
+          </div>
+          <div class="card">
+            <img src="Assets_spotify/card4img.jpeg" class="card-img" />
+            <p class="card-title">Alter Ego Na Ready</p>
+            <p class="card-info">Your daily update of the most played...</p>
+          </div>
+          <div class="card">
+            <img src="Assets_spotify/card5_1img.jpeg" class="card-img" />
+            <p class="card-title">Ishq Hai</p>
+            <p class="card-info">Anurag Saikia, Raj Shekhar, Rom...</p>
+          </div>
+        </div>
+
+        <h2>Featured Charts</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="Assets_spotify/card5img.jpeg" class="card-img" />
+            <p class="card-title">Top Songs - Global</p>
+            <p class="card-info">Your daily update of the most played...</p>
+          </div>
+          <div class="card">
+            <img src="Assets_spotify/card6img.jpeg" class="card-img" />
+            <p class="card-title">Top Songs - India</p>
+            <p class="card-info">Your daily update of the most played...</p>
+          </div>
+          <div class="card">
+            <img src="Assets_spotify/card1img.jpeg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">Your daily update of the most played...</p>
+          </div>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <!-- bottom pane -->
+      <div class="music-player">
+        <!-- left-bottom pane -->
+        <div class="album">
+          <img src="Assets_spotify2/album_picture1.jpeg" />
+          <div class="album-text">
+            <div class="line_1">Ishq Hai</div>
+            <div class="line_2">
+              Anurag Saikia, Raj Shekhar, Romy, Amarabha Banerjee
+            </div>
+          </div>
+          <div class="album-icon">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+
+        <!-- middle bottom pane -->
+        <div class="player">
+          <div class="player-controls">
+            <img
+              src="Assets_spotify/player_icon1.png"
+              class="player-control-icon"
+            />
+            <img
+              src="Assets_spotify/player_icon2.png"
+              class="player-control-icon"
+            />
+            <img
+              src="Assets_spotify/player_icon3.png"
+              class="player-control-icon"
+              style="opacity: 1; height: 2rem"
+            />
+            <img
+              src="Assets_spotify/player_icon4.png"
+              class="player-control-icon"
+            />
+            <img
+              src="Assets_spotify/player_icon5.png"
+              class="player-control-icon"
+            />
+          </div>
+          <div class="playback-bar">
+            <span class="curr-time">00:00</span>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              class="progress-bar"
+              step="1"
+            />
+            <span class="tot-time">03:33</span>
+          </div>
+        </div>
+
+        <!-- right bottom pane -->
+        <div class="controls">
+          <!-- control icons -->
+          <img
+            src="Assets_spotify2/controls_icon1.png"
+            class="control-icon-1"
+          />
+          <img
+            src="Assets_spotify2/controld_icon2.png"
+            class="control-icon-1"
+          />
+          <img
+            src="Assets_spotify2/controls_icon3.png"
+            class="control-icon-2"
+          />
+          <img
+            src="Assets_spotify2/controls_icon4.png"
+            class="control-icon-2"
+          />
+          <img
+            src="Assets_spotify2/controls_icon5.png"
+            class="control-icon-1"
+          />
+
+          <!-- volume bar in control -->
+
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            class="progress-bar vol"
+          />
+
+          <i class="fa-solid fa-up-right-and-down-left-from-center zoom"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
